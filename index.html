@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Date Table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <form>
+      <div class="inputField">
+        <label>Ім'я:</label>
+        <input type="text" id="name" required />
+      </div>
+      <br />
+      <div class="inputField">
+        <label>Прізвище:</label>
+        <input type="text" id="surname" required />
+      </div>
+      <br />
+      <div class="inputField">
+        <label>E-mail:</label>
+        <input type="email" id="email" pattern="[^ @]*@[^ @]*" required />
+      </div>
+      <br />
+      <br /><br />
+      <button type="button" onclick="sendValues()">Додати</button>
+      <button type="button" onclick="editSelectedRow()">Змінити</button>
+      <button type="button" onclick="deleteSelectedRow()">Видалити</button>
+      <br />
+    </form>
+    <br />
+    <table id="table">
+      <tr>
+        <th>Ім'я</th>
+        <th>Прізвище</th>
+        <th>E-mail</th>
+        <th>Дата створення</th>
+      </tr>
+      <!-- <tr>
+        <td>Олег</td>
+        <td>Скляров</td>
+        <td>oskliarov@gmai.com</td>
+      </tr>
+      <tr>
+        <td>Олег</td>
+        <td>Скляров</td>
+        <td>oskliarov@gmai.com</td>
+      </tr> -->
+    </table>
+
+    <script src="main.js"></script>
+  </body>
+</html>
